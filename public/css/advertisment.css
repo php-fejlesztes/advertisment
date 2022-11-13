@@ -1,0 +1,85 @@
+.table {
+    display: table;
+    padding: 5px;            
+}
+
+.row-head {
+    display: table-row;
+    padding: 5p;
+    background-color: #003300;
+    color: white;  
+}
+.row-dark {
+    display: table-row;
+    padding: 5p;
+    background-color: black;
+    color: white;            
+}
+.row-light {
+    display: table-row;
+    padding: 5p;
+    background-color: #354230;
+    color: white;  
+}
+
+.cell-id {
+    display: table-cell;
+    padding: 5px;
+    width: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.cell-name {
+    display: table-cell;
+    padding: 5px;
+    width: 300px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.topnav {
+    background-color: 336699;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.content {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 12px;
+    background-color: black;
+    padding: 1%;
+}
+
+body , p {
+    background-color: black;
+    font-size: 100%;
+    color: white;
+}
+
+
+h1 {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 190%;
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+    padding: 3px;
+    font-size: 110%;
+}

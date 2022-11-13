@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteBase /advertisment
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+#RewriteRule ^lib/* index.php
+#RewriteRule ^models/* index.php
+#RewriteRule ^repo/* index.php
+#RewriteRule ^controllers/* index.php
+
+#RewriteRule ^index?$ index.php
+#RewriteRule ^test/rewritetest?/([0-9]+)$ test/rewritetest.php?id=$1
