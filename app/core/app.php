@@ -11,12 +11,13 @@ class App {
     protected $params=[];
 
 
-    // router működése
-    // url: /home/index/1
-    // home->controller név: home
-    // index->metódus a controllerben
-    // 1->paraméter
-
+   /**
+    * router működése
+    * url: /home/index/1
+    *    - home->controller név: home
+    *    - index->metódus a controllerben
+    *    - 1->paraméter
+     */
     public function __construct()  {
 
 
