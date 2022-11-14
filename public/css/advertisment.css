@@ -1,7 +1,7 @@
 .table {
     display: table;
     padding: 5px;  
-    color: 	#FF6347;          
+    color: 	#FF6347;     
 }
 
 .row-head {
@@ -82,4 +82,54 @@ h2 {
     color: 	#FF6347;
     padding: 3px;
     font-size: 110%;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;    
+    margin-left: 10px;
+}
+
+.icon-button {
+    width: 12px;
+    height: 12px;    
+    margin-left: 10px;
+}
+
+.form {
+    width: 450px;    
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: hsl(30%, 30%, 30%);
+    border: 1px solid #FF6347;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.1rem;
+}
+
+button{
+    border:1;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border-color: #FF6347;
+    background:none;
+    /*And other css to remove the default button property */    
+    color: 	#FF6347;
+    gap: 0.1rem;
+
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font: 1rem / 1rem sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.1rem 0.1rem;
+  background-color: #003300;
+  color:#FF6347;
 }
