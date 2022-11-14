@@ -7,11 +7,10 @@
 </head>
 <body>
     <div class="content">
-        <div class="topnav">
-            <a href="/advertisment/">Home</a>            
-            <a href="/advertisment/user/index">Felhasználók</a>
-            <a href="/advertisment/advertisment/index">Hirdetések</a>
-        </div>     
+        <?php
+            // Navigáció
+            require_once("./app/views/src/navigation.php");
+        ?>    
         <h1>Hirdetések kezelése</h1>
         <p>A következő listában a hirdetéseket látja. Látható a hirdetés címe és annak a felhasználónak a neve aki a hirdetést feladata.</p>
         <h2>Hirdetések listája:</h2>

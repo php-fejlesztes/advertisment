@@ -4,6 +4,7 @@
 // https://www.youtube.com/watch?v=WRgHBu3msA4&ab_channel=Codecourse
 // https://github.com/keefekwan/php_crud_mvc_oop_bootstrap/blob/master/controller/ContactsController.php
 // https://windicss.org/utilities/layout/tables.html
+// https://stackoverflow.com/questions/7020873/show-hide-div-if-if-statement-is-true
 
     error_reporting(E_ALL | E_STRICT);
     ini_set('display_errors', 1);

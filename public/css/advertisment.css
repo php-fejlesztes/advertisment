@@ -97,11 +97,19 @@ h2 {
 }
 
 .form {
+    background-color: hsl(30%, 30%, 30%);
+}
+
+#form-update {
+    display: none;
+    visibility: hidden;
+}
+
+.form-boxing {
     width: 450px;    
     box-sizing: border-box;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: hsl(30%, 30%, 30%);
     border: 1px solid #FF6347;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,6 +117,7 @@ h2 {
 }
 
 button{
+    font: 0.7rem / 0.7rem sans-serif;
     border:1;
     box-sizing: border-box;
     padding: 0.5rem;
@@ -125,7 +134,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  font: 1rem / 1rem sans-serif;
+  font: 0.7rem / 0.7rem sans-serif;
   display: block;
   box-sizing: border-box;
   width: 100%;

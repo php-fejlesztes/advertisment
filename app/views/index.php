@@ -8,11 +8,10 @@
 </head>
 <body>
     <div class="content">
-        <div class="topnav">
-            <a href="/advertisment/">Home</a>
-            <a href="/advertisment/user/index">Felhasználók</a>
-            <a href="/advertisment/advertisment/index">Hirdetések</a>
-        </div>     
+        <?php
+            // Navigáció
+            require_once("./app/views/src/navigation.php");
+        ?>    
         <h1></h1>
         <p>Az alkalmazásnak 2 mysql adatbázis kezell (felhasználók és hirdetések). Konfiguráció a "config" mappában.</p>
         <p>Ez a nyitóoldal. Elérhető a felhasználók és hirdetések menüpont.</p>
