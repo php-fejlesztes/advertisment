@@ -14,6 +14,7 @@
             <a href="/advertisment/advertisment/index">Hirdetések</a>
         </div>     
         <h1>Felhasználók kezelése</h1>
+        <p>A következő listában azokat a felhasználókat látja, akik hirdetéseket adhatnak fel.</p>
         <h2>Felhasználók listája:</h2>
         <?php       
             if (!isset($users) ||  $users==null) {

@@ -1,25 +1,25 @@
 .table {
     display: table;
-    padding: 5px;            
+    padding: 5px;  
+    color: 	#FF6347;          
 }
 
 .row-head {
     display: table-row;
     padding: 5p;
     background-color: #003300;
-    color: white;  
+    color: 	#FF4500;
+    font-weight: 500 ;
 }
 .row-dark {
     display: table-row;
     padding: 5p;
-    background-color: black;
-    color: white;            
+    background-color:  #404040;        
 }
 .row-light {
     display: table-row;
     padding: 5p;
-    background-color: #354230;
-    color: white;  
+    background-color:	#595959;
 }
 
 .cell-id {
@@ -45,7 +45,7 @@
 
 .topnav a {
     float: left;
-    color: white;
+    color:	#FF6347;
     text-align: center;
     padding: 12px 15px;
     text-decoration: none;
@@ -67,19 +67,19 @@
 body , p {
     background-color: black;
     font-size: 100%;
-    color: white;
+    color:	#FF6347;
 }
 
 
 h1 {
-    color: white;
+    color:	#FF6347;
     font-family: "Quicksand", sans-serif;
     font-size: 190%;
     padding: 10px;
 }
 
 h2 {
-    color: white;
+    color: 	#FF6347;
     padding: 3px;
     font-size: 110%;
 }

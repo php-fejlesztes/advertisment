@@ -12,8 +12,9 @@
             <a href="/advertisment/user/index">Felhasználók</a>
             <a href="/advertisment/advertisment/index">Hirdetések</a>
         </div>     
-        <h1>Felhasználók kezelése</h1>
-        <h2>Felhasználók listája:</h2>
+        <h1>Hirdetések kezelése</h1>
+        <p>A következő listában a hirdetéseket látja. Látható a hirdetés címe és annak a felhasználónak a neve aki a hirdetést feladata.</p>
+        <h2>Hirdetések listája:</h2>
         <?php        
             if (!isset($advertisments) ||  $advertisments==null) {
                 echo "<p>Nincs hirdetés az adatbázisban!</p>";
