@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Felhasználók listája</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="/advertisment/public/css/advertisment.css">
     <script type="text/javascript" src="/advertisment/public/js/show-hide-form.js"></script>
     <script>
@@ -16,10 +17,6 @@
         <?php
             // Navigáció
             require_once("./app/views/src/navigation.php");
-
-            //onload="formUpdateShowHideForm."
-            //onClick="fadeOutNewItemForm()"
-            //onclick="fadeInNewItemForm()"
         ?>
 
         <h1>Felhasználók kezelése</h1>
@@ -35,7 +32,7 @@
                 echo '<input class="form-text" id="name" type="text"  name="" value="">';
                 echo '<div class="submit-wrapper">';
                     echo '<button type="submit"><img alt="Mentés" class="icon-button" src="/advertisment/public/img/trash.png"></img>Mentés</button>';
-                    echo '<button><img alt="Mégsem" class="icon-button" src="/advertisment/public/img/cancel.png"></img>Mégsem</button>';
+                    echo '<button onclick="formUpdateShowHideForm.fadeOutNewItemForm()"><img alt="Mégsem" class="icon-button" src="/advertisment/public/img/cancel.png"></img>Mégsem</button>';
                 echo '</div>'; //submitwrapper
             echo '</form>';
         ?>
@@ -45,7 +42,7 @@
         //$actionUrl=APPURL."user/add";
         //echo '<form class="form" action='.$actionUrl.'>';
         //echo '<input type="hidden" id="control-new" name="control" value="new-item">';
-        echo '<button ><img class="icon-button" alt="Új felhasználó" src="/advertisment/public/img/add.png"></img>Új felhasználó</button>';
+        echo '<button onclick="formUpdateShowHideForm.fadeInNewItemForm()"><img class="icon-button" alt="Új felhasználó" src="/advertisment/public/img/add.png"></img>Új felhasználó</button>';
         //echo '</form>';
         ?>
 

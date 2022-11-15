@@ -1,14 +1,15 @@
-var jQueryScript = document.createElement('script');
-jQueryScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
-document.head.appendChild(jQueryScript);
+//var jQueryScript = document.createElement('script');
+//jQueryScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+//document.head.appendChild(jQueryScript);
 
-let debug=1;
+let debug=0;
 
 class ShowHideForm {
 
-    constructor(formClassNeme) {
-        this.formClassNeme=formClassNeme;
-        this.loggingInfo(this.formClassNeme+" névvel ShowHideForm objektum létrehött");
+    constructor(formClassName) {
+        this.formClassName=formClassName;
+        this.isHide=true;
+        this.loggingInfo(this.formClassName+" névvel ShowHideForm objektum létrehött.");
     }
 
     loggingInfo(message) {
@@ -18,22 +19,25 @@ class ShowHideForm {
     }
 
     hide() {
-        $("#form-update").hide();
-    }
-/*
-    function fadeOutNewItemForm() {    
-            console.log("fadeOut");
-            $("#form-update").fadeOut("slow");
+        $(this.formClassName).hide();
+        this.isHide=true;
+        this.loggingInfo(this.formClassName+" form eltüntetve.");
     }
 
-    function fadeInNewItemForm() {
-        var isVisibleNewItemForm = $('#form-update').is(':visible');
-        console.log("fadeIn:"+isVisibleNewItemForm);
-        if (!isVisibleNewItemForm)
-            $("#form-update").show();
-        else
-            $("#form-update").fadeIn("slow");
-    }*/
+    fadeOutNewItemForm() {    
+        $(this.formClassName).fadeOut("slow");
+        this.loggingInfo(this.formClassName+" lassan eltüntetve.");
+    }
 
-
+    fadeInNewItemForm() {
+        if (this.isHide) {
+            $(this.formClassName).show();
+            this.loggingInfo(this.formClassName+" megjelenítve.");
+            this.isHide=false;
+        }
+        else {
+            $(this.formClassName).fadeIn("slow");
+            this.loggingInfo(this.formClassName+" lassan megjelenítve.");
+        }
+    }
 }
