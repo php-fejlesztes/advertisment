@@ -93,16 +93,15 @@ h2 {
 .icon-button {
     width: 12px;
     height: 12px;    
-    margin-left: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+
 }
 
 .form {
     background-color: hsl(30%, 30%, 30%);
-}
-
-#form-update {
-    display: none;
-    visibility: hidden;
 }
 
 .form-boxing {
@@ -115,6 +114,10 @@ h2 {
     grid-template-columns: 1fr 1fr;
     gap: 0.1rem;
 }
+
+#form-update {
+}
+
 
 button{
     font: 0.7rem / 0.7rem sans-serif;
