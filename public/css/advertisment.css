@@ -115,9 +115,11 @@ h2 {
     gap: 0.1rem;
 }
 
-#form-update {
+.submit-wrapper {
 }
 
+#form-update {
+}
 
 button{
     font: 0.7rem / 0.7rem sans-serif;
@@ -144,4 +146,12 @@ textarea {
   padding: 0.1rem 0.1rem;
   background-color: #003300;
   color:#FF6347;
+}
+
+#debug-box {
+    background-color: #15AAD7;
+    color: white;
+    padding: 10px;
+    border: solid 3px #0F7391;
+    margin: 10px;
 }

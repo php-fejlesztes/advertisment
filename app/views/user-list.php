@@ -26,8 +26,8 @@
         <?php 
 
             echo '<form  id="form-update" class="form form-boxing" action="#">';
-                echo '<p>Azon.</p>';
-                echo '<p>1</p>';
+                //echo '<p>Azon.</p>';
+                //echo '<p>1</p>';
                 echo '<label class="form-label" for="name">Felhasználó név:</label>';
                 echo '<input class="form-text" id="name" type="text"  name="" value="">';
                 echo '<div class="submit-wrapper">';

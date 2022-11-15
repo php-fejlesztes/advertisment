@@ -48,12 +48,17 @@ class App {
             $this->params= $url ? array_values($url) : [];
                      
             //Controler neve kiegészül a "Controller" szóval
-            $controlerName=$this->controller.CONTROLERNAMEEXTENSION;
+            $controllerName=$this->controller.CONTROLERNAMEEXTENSION;
             
             //echo $controlerName." ".$this->method."</BR>";
             //var_dump($this->params);
             // router alapján átíránytás
-            call_user_func_array([$controlerName,$this->method],$this->params);              
+            require_once('./app/lib/debug.php');
+            $debug=new AppDebug();
+            $debug->showInfo("Conroller: ".$controllerName." Method: ".$this->method);
+            $debug->showArray($this->params);
+
+            call_user_func_array([$controllerName,$this->method],$this->params);              
         }     
     }
 
